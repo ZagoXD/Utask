@@ -1,0 +1,65 @@
+
+.container {
+    text-align: start;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+  
+  }
+  .tarefas {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    font-family: "Poppins";
+  }
+  .headerFazer {
+    display: flex;
+    justify-content: space-between;
+  }
+  #addTask {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin: auto 0px auto 0px;
+    background-color: #FFFFFF;
+    color: #226ED8;
+  }
+  .tasks {
+    background-color: #EEEEEE; 
+    width: 320px;
+    height: 337px;
+    left: 160px;
+    top: 301px;
+    border-radius: 10px;
+  }
+  .frame {
+    width: 291px;
+    height: 318px;
+    margin: 0px 19px 19px 20px;
+    padding-right: 5px;
+    overflow: auto;
+    justify-content: center;
+    display: flex;
+    border-radius: 10px;
+  }
+  .listaTarefas {
+    display: flex;
+    flex-direction: column;
+  
+    position: relative;
+    width: 280px;
+    height: fit-content;
+    list-style-type: none;
+    padding-inline-start: 0px;
+  }
+  
+  .listaTarefas li {
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 6px;
+    margin-bottom: 14px;
+    height: fit-content;
+  }
