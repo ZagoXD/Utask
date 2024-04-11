@@ -1,17 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Tarefas.css';
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
+import { ModalNewTask } from './ModalNewTask';
 import "@fontsource/poppins";
 
-
 const Tarefas = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const openModal = () => {
+        setIsModalOpen(true);
+    }
+
+    const closeModal = () => {
+        setIsModalOpen(false);
+    }
+
     return (
-        <div className="meio-carrossel">
-            <div className="tarefas">
+        <div id="meio-carrossel">
+            <div id="tarefas">
                 <div className="container">
-                    <div className="headerFazer">
+                    <div id="headerFazer">
                         <p>A fazer</p>
-                        <button id="addTask">
+                        <button id="addTask" onClick={openModal}>
                             <AddCircleOutlineIcon/>
                         </button>
                     </div>
@@ -44,6 +54,7 @@ const Tarefas = () => {
                     </div>
                 </div>
             </div>
+            {isModalOpen && <ModalNewTask closeModal={closeModal} />}
         </div>
     );
 }

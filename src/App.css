@@ -45,3 +45,24 @@ footer p{
   height: 16px;
   margin: 2px;
 }
+
+#idFrase{
+  display: flex;
+  justify-content: center;
+  
+}
+
+#app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+#content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+

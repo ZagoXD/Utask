@@ -2,17 +2,17 @@
 .container {
     text-align: start;
     margin-bottom: 20px;
-    margin-left: 5px;
+    margin-left: 15px;
     margin-right: 5px;
   
   }
-  .tarefas {
+  #tarefas {
     display: flex;
     justify-content: space-around;
     font-size: 20px;
     font-family: "Poppins";
   }
-  .headerFazer {
+  #headerFazer {
     display: flex;
     justify-content: space-between;
   }
@@ -26,6 +26,8 @@
     margin: auto 0px auto 0px;
     background-color: #FFFFFF;
     color: #226ED8;
+    border: none;
+    outline: none;
   }
   .tasks {
     background-color: #EEEEEE; 

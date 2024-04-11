@@ -1,11 +1,15 @@
 import React from 'react'
 import './FraseDia.css'
+import "@fontsource/poppins";
 
 const FraseDia = () => {
   return (
     <div id='fraseDia'>
-        <p>Frase do dia</p>
-        <p>Se você quer um pedacinho do paraíso, acredite em Deus. Mas se você quer conquistar o mundo, acredite em você porque Deus já te deu tudo o que você precisa para você vencer.</p>
+        <img src="/icone.png" alt="" id='iconeFrase'/>
+        <div id='containerFrases'>
+          <p id='fraseTitle'>Frase do dia</p>
+          <p>Se você quer um pedacinho do paraíso, acredite em Deus. Mas se você quer conquistar o mundo, acredite em você porque Deus já te deu tudo o que você precisa para você vencer.</p>
+        </div>
     </div>
   )
 }
