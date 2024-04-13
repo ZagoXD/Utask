@@ -2,5 +2,71 @@ body {
   margin: 0;
   padding: 0;
 }
+button{
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
 
+/* Estilos do modo escuro */
+.dark-mode {
+  background-color: #222222;
+  color: white;
+}
+
+.dark-mode #TituloTask {
+  color: #FAFAFA;
+}
+
+.dark-mode .Descricao {
+  color: #5C9DFF;
+}
+
+.dark-mode .expand {
+  color: #5C9DFF;
+}
+
+.dark-mode .DescricaoCompleta {
+  color: #FAFAFA;
+}
+
+.dark-mode .janelaTask {
+  background-color: #3D3D3D;
+}
+
+.dark-mode #idtitulo,
+.dark-mode #iddescricao {
+  background-color: #333333;
+  color: #FAFAFA;
+}
+
+.dark-mode .tituloTask h2,
+.dark-mode .descricaoTask h2 {
+  color: #FAFAFA;
+}
+
+.dark-mode header {
+  background-color: #333333;
+}
+
+.dark-mode footer {
+  background-color: #333333;
+}
+
+.dark-mode .tasks {
+  background-color: #333333;
+}
+
+.dark-mode #ContainerTask {
+  background-color: #3D3D3D;
+}
+
+.dark-mode #ContainerExcluir {
+  background-color: #535353;
+  color: #FFAFAF;
+}
+
+.dark-mode #fraseDia {
+  background-color: #3D3D3D;
+}
 

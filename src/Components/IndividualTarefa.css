@@ -1,0 +1,85 @@
+#ContainerTask {
+    background-color: white;
+    width: 310px;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 0px;
+    position: relative;
+}
+
+.botaoProximo {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.descricaoBotaoProximo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#ContainerTitleTask{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#TituloTask{
+    font-family: "Poppins";
+    font-size: 15px;
+    padding: 0px 0px 0px 10px;
+}
+
+#moreveIcon{
+    color: #226ED8;
+
+}
+
+#AparecerExcluir{
+    display: flex;
+    justify-content: center;
+    margin-left: 160px;
+    margin-bottom: -10px;
+    margin-right: 8px;
+}
+
+#ContainerBotaoProximo{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 10px;
+}
+
+.Descricao {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    font-family: "Poppins";
+    font-size: 15px;
+}
+
+.DescricaoCompleta {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    font-family: "Poppins";
+    font-size: 15px;
+}
+
+#DescricaoCompleta {
+    margin-top: -15px;
+    max-height: 100px; 
+    width: 200px;
+    overflow-y: auto; 
+    padding: 0 10px;
+}
+
+#DescricaoCompleta::-webkit-scrollbar {
+    display: none;
+}
+
+
+
