@@ -1,0 +1,98 @@
+.createContainer {
+    display: flex;
+    width: 310px;
+    height: 100%;
+    margin: 0;
+}
+
+.createContainer h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 42px;
+    color: #226ED8;
+}
+
+.sublinhado{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.sublinhado h2{
+    width: 40%;
+    height: 1px;
+    background-color: #3B5F91;
+    margin-bottom: 50px;
+}
+
+.create {
+    width: 100%;
+    padding: 10px;
+    font-family: "Poppins";
+}
+
+.create p{
+    font-family: "Poppins";
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.create label, input, div {
+    display: block;
+    width: calc(100% - 10px);
+}
+
+.create div {
+    margin: 0 0 20px 0;
+}
+
+.create button {
+    padding: 0px;
+}
+
+#cadastrarBtn{
+    height: 45px;
+    border-radius: 20px;
+    border: transparent;
+    color: #FFFFFF;
+    background-color: #226ED8;
+    font-family: "Poppins";
+    font-size: 16px;
+}
+
+#esqueciSenha{
+    font-family: "Poppins";
+    font-size: 10px;
+    color: #226ED8;
+    text-decoration: underline;
+}
+
+.inputsCreate{
+    border-radius: 8px;
+    border: solid 1px #002D6C;
+    color: #00122A;
+    font-family: "Poppins";
+    font-size: 14px;
+    height: 40px;
+    padding-left: 5px;
+    background-color: #EEF5FF;
+}
+
+.inputsCreateIncorretos{
+    border-radius: 8px;
+    border: solid 1px #820000;
+    color: #00122A;
+    font-family: "Poppins";
+    font-size: 14px;
+    height: 40px;
+    padding-left: 5px;
+    background-color: #FFE5E5;
+}
+
+#mensagemErroCreate{
+    font-family: "Poppins";
+    font-size: 10px;
+    color: #820000;
+    margin-top: -15px;
+}

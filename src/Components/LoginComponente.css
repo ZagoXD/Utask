@@ -1,0 +1,78 @@
+.loginContainer {
+    display: flex;
+    width: 374px;
+    height: 100%;
+    margin: 0;
+}
+
+.loginContainer h1 {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: 42px;
+    color: #226ED8;
+}
+
+.login {
+    width: 100%;
+    padding: 10px;
+    font-family: "Poppins";
+}
+
+.login label, input, div {
+    display: block;
+    width: calc(100% - 10px);
+}
+
+.login div {
+    margin: 0 0 20px 0;
+}
+
+.login button {
+    padding: 0px;
+}
+
+#enviarBtn{
+    height: 45px;
+    border-radius: 20px;
+    border: transparent;
+    color: #FFFFFF;
+    background-color: #226ED8;
+    font-family: "Poppins";
+    font-size: 16px;
+}
+
+#esqueciSenha{
+    font-family: "Poppins";
+    font-size: 10px;
+    color: #226ED8;
+    text-decoration: underline;
+}
+
+.inputsLogin{
+    border-radius: 8px;
+    border: solid 1px #002D6C;
+    color: #00122A;
+    font-family: "Poppins";
+    font-size: 14px;
+    height: 40px;
+    padding-left: 5px;
+    background-color: #EEF5FF;
+}
+
+.inputsLoginIncorretos{
+    border-radius: 8px;
+    border: solid 1px #820000;
+    color: #00122A;
+    font-family: "Poppins";
+    font-size: 14px;
+    height: 40px;
+    padding-left: 5px;
+    background-color: #FFE5E5;
+}
+
+.mensagemErroLogin{
+    font-family: "Poppins";
+    font-size: 10px;
+    color: #820000;
+}

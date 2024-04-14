@@ -4,7 +4,7 @@ import FraseDia from './Components/FraseDia';
 import Tarefas from './Components/Tarefas'
 import "@fontsource/poppins";
 import FavoriteIcon from '@mui/icons-material/Favorite';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -21,6 +21,21 @@ function App() {
   const toggleMode = () => {
     setIsDarkMode(prevMode => !prevMode);
   };
+
+  useEffect(() => {
+    const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    setIsDarkMode(darkModeMediaQuery.matches);
+
+    const changeModeHandler = (event) => {
+      setIsDarkMode(event.matches);
+    };
+
+    darkModeMediaQuery.addEventListener('change', changeModeHandler);
+
+    return () => {
+      darkModeMediaQuery.removeEventListener('change', changeModeHandler);
+    };
+  }, []);
 
   return (
     <div id="app-container" className={isDarkMode ? 'dark-mode' : 'light-mode'}>
