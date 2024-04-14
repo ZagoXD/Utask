@@ -1,0 +1,13 @@
+#headerTelaRegister{
+    width: 100%;
+    height: 52px;
+    background-color: #226ED8;
+}
+
+.ContainerTelaRegister {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+

@@ -1,24 +1,26 @@
 import React, { useState } from 'react';
 import './CreateAccComponent.css';
 import "@fontsource/poppins";
+import RedirecionarLogin from './RedirecionarLogin';
 
 const CreateAccComponent = () => {
   const [senha, setSenha] = useState('');
   const [senhaConfirmar, setSenhaConfirmar] = useState('');
   const [senhaValida, setSenhaValida] = useState(true);
+  const [mostrarRedirecionamento, setMostrarRedirecionamento] = useState(false);
 
   const handleSenhaChange = (event) => {
     setSenha(event.target.value);
-    if (event.target.value !== senhaConfirmar) {
-      setSenhaValida(false);
-    } else {
-      setSenhaValida(true);
-    }
+    validarSenhas(event.target.value, senhaConfirmar);
   };
 
   const handleSenhaConfirmarChange = (event) => {
     setSenhaConfirmar(event.target.value);
-    if (event.target.value !== senha) {
+    validarSenhas(senha, event.target.value);
+  };
+
+  const validarSenhas = (senha, senhaConfirmar) => {
+    if (senha !== senhaConfirmar) {
       setSenhaValida(false);
     } else {
       setSenhaValida(true);
@@ -27,12 +29,18 @@ const CreateAccComponent = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Aqui você pode adicionar a lógica para submeter o formulário
+    if (senhaValida) {
+      setMostrarRedirecionamento(true);
+      setTimeout(() => {
+        setMostrarRedirecionamento(false);
+      }, 3000);
+    }
   };
 
   return (
     <div className='createContainer'>
       <form className='create' onSubmit={handleSubmit}>
+        {mostrarRedirecionamento && <RedirecionarLogin />}
         <h1>uTask 3.0</h1>
         <div className='sublinhado'><h2></h2></div>
         <p>Crie uma conta</p>

@@ -25,18 +25,18 @@
     margin-left: 5px;
 }
 
-.titleRedirect{
+#titleRedirect{
     display: flex;
     align-items: center;
     font-size: 20px;
     font-weight: bold;
 }
 
-.titleRedirect img {
+#titleRedirect img {
     margin-right: 3px;
 }
 
-.textRedirect{
+#textRedirect{
     margin-top: -30px;
     font-size: 16px;
 }
