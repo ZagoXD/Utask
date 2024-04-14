@@ -3,6 +3,7 @@
     width: 374px;
     height: 100%;
     margin: 0;
+    justify-content: center;
 }
 
 .loginContainer h1 {
@@ -21,7 +22,7 @@
 
 .login label, input, div {
     display: block;
-    width: calc(100% - 10px);
+    width: 100%;
 }
 
 .login div {

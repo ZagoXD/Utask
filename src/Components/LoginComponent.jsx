@@ -26,7 +26,7 @@ const LoginComponent = () => {
   };
 
   return (
-    <div className='loginContainer'>
+    <div className='loginContainer alignVertical'>
       <form className='login' onSubmit={handleSubmit}>
         <h1>uTask 3.0</h1>
         <div>

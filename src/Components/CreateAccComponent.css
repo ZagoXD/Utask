@@ -40,7 +40,7 @@
 
 .create label, input, div {
     display: block;
-    width: calc(100% - 10px);
+    width: 100%;
 }
 
 .create div {
