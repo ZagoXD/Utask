@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import './LoginComponente.css';
 import "@fontsource/poppins";
+import {useNavigate} from 'react-router-dom';
 
 const LoginComponent = () => {
   const [emailIncorreto, setEmailIncorreto] = useState(false);
   const [senhaIncorreta, setSenhaIncorreta] = useState(false);
+  const navigate = useNavigate();
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -21,8 +23,12 @@ const LoginComponent = () => {
       setSenhaIncorreta(true);
     } else {
       setSenhaIncorreta(false);
-      // Aqui você pode fazer algo como enviar os dados do formulário para autenticação
+      navigate('/app');
     }
+  };
+
+  const handleRegistrarClick = () => {
+    navigate('/register'); 
   };
 
   return (
@@ -40,8 +46,9 @@ const LoginComponent = () => {
           {senhaIncorreta && <p className="mensagemErroLogin">Senha incorreta. Por favor, tente novamente.</p>}
           <button id='esqueciSenha'>Esqueci a senha?</button>
         </div>
-        <input type="submit" value="Entrar" id='enviarBtn'/>
+        <input type="submit" value="Entrar" className='enviarBtn'/>
       </form>
+      <button className='registrarBtn' onClick={handleRegistrarClick}>Registrar</button>
     </div>
   )
 }

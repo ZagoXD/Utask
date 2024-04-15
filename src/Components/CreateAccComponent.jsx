@@ -2,12 +2,14 @@ import React, { useState } from 'react';
 import './CreateAccComponent.css';
 import "@fontsource/poppins";
 import RedirecionarLogin from './RedirecionarLogin';
+import {useNavigate} from 'react-router-dom';
 
 const CreateAccComponent = () => {
   const [senha, setSenha] = useState('');
   const [senhaConfirmar, setSenhaConfirmar] = useState('');
   const [senhaValida, setSenhaValida] = useState(true);
   const [mostrarRedirecionamento, setMostrarRedirecionamento] = useState(false);
+  const navigate = useNavigate();
 
   const handleSenhaChange = (event) => {
     setSenha(event.target.value);
@@ -33,6 +35,7 @@ const CreateAccComponent = () => {
       setMostrarRedirecionamento(true);
       setTimeout(() => {
         setMostrarRedirecionamento(false);
+        navigate('/')
       }, 3000);
     }
   };

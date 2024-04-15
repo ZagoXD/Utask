@@ -21,3 +21,9 @@
 #DeleteIcon{
     font-size: 17px;
 }
+
+.dark-mode #ContainerExcluir {
+    background-color: #535353;
+    color: #FFAFAF;
+}
+  

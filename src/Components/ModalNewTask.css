@@ -110,3 +110,18 @@
     width: 1%;
     justify-content: flex-end;
 }
+
+.dark-mode .janelaTask {
+    background-color: #3D3D3D;
+}
+
+.dark-mode #idtitulo,
+.dark-mode #iddescricao {
+  background-color: #333333;
+  color: #FAFAFA;
+}
+
+.dark-mode .tituloTask h2,
+.dark-mode .descricaoTask h2 {
+  color: #FAFAFA;
+}

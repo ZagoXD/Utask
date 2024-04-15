@@ -1,5 +1,4 @@
 .loginContainer {
-    display: flex;
     width: 374px;
     height: 100%;
     margin: 0;
@@ -33,8 +32,21 @@
     padding: 0px;
 }
 
-#enviarBtn{
+.enviarBtn{
     height: 45px;
+    width: 100%;
+    border-radius: 20px;
+    border: transparent;
+    color: #FFFFFF;
+    background-color: #226ED8;
+    font-family: "Poppins";
+    font-size: 16px;
+}
+
+.registrarBtn{
+    margin-left: 10px;
+    height: 45px;
+    width: 100%;
     border-radius: 20px;
     border: transparent;
     color: #FFFFFF;
@@ -76,4 +88,9 @@
     font-family: "Poppins";
     font-size: 10px;
     color: #820000;
+}
+
+#botoesLoginComponente{
+    display: flex;
+    justify-content: space-between;
 }

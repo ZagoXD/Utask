@@ -81,5 +81,21 @@
     display: none;
 }
 
+.dark-mode #ContainerTask {
+    background-color: #3D3D3D;
+}
+
+.dark-mode #TituloTask {
+    color: #FAFAFA;
+}
+
+.dark-mode .Descricao {
+    color: #5C9DFF;
+}
+
+.dark-mode .DescricaoCompleta {
+    color: #FAFAFA;
+}
+
 
 
