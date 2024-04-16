@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import App from './App.jsx'
 import Loginscr from './Loginscr.jsx'
 import Registerscr from './Registerscr.jsx'
-import App from './App.jsx'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
@@ -26,19 +26,6 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
 
 <React.StrictMode>
-  <App/>
+  <RouterProvider router={router}/>
 </React.StrictMode> 
 );
-
-/* import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
-
-
-
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App/>
-  </React.StrictMode>
-) */

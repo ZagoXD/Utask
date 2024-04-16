@@ -17,6 +17,8 @@ header h1{
 footer{
   background-color: #114FA7;
   color: #ffff;
+  position: fixed;
+  bottom: 0;
   font-size: 14px;
   display: flex;
   justify-content: space-around;

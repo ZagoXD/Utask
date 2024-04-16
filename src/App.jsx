@@ -1,10 +1,10 @@
-import './App.css'
+import React, { useState, useEffect } from 'react';
+import './App.css';
 import ChangeMode from './Components/ChangeMode';
 import FraseDia from './Components/FraseDia';
-import Tarefas from './Components/Tarefas'
+import Tarefas from './Components/Tarefas';
 import "@fontsource/poppins";
 import FavoriteIcon from '@mui/icons-material/Favorite';
-import { useState, useEffect } from 'react';
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -36,6 +36,14 @@ function App() {
       darkModeMediaQuery.removeEventListener('change', changeModeHandler);
     };
   }, []);
+
+  useEffect(() => {
+    if (isDarkMode) {
+      document.body.classList.add('bodyDark');
+    } else {
+      document.body.classList.remove('bodyDark');
+    }
+  }, [isDarkMode]);
 
   return (
     <div id="app-container" className={isDarkMode ? 'dark-mode' : 'light-mode'}>

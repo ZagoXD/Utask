@@ -21,7 +21,6 @@
 
 .login label, input, div {
     display: block;
-    width: 100%;
 }
 
 .login div {
@@ -63,6 +62,7 @@
 }
 
 .inputsLogin{
+    width: calc(100% - 10px);
     border-radius: 8px;
     border: solid 1px #002D6C;
     color: #00122A;
@@ -74,6 +74,7 @@
 }
 
 .inputsLoginIncorretos{
+    width: calc(100% - 10px);
     border-radius: 8px;
     border: solid 1px #820000;
     color: #00122A;

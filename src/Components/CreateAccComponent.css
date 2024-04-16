@@ -40,7 +40,6 @@
 
 .create label, input, div {
     display: block;
-    width: 100%;
 }
 
 .create div {
@@ -52,6 +51,7 @@
 }
 
 #cadastrarBtn{
+    width: calc(100% - 10px);
     height: 45px;
     border-radius: 20px;
     border: transparent;
@@ -69,6 +69,7 @@
 }
 
 .inputsCreate{
+    width: calc(100% - 10px);
     border-radius: 8px;
     border: solid 1px #002D6C;
     color: #00122A;
@@ -80,6 +81,7 @@
 }
 
 .inputsCreateIncorretos{
+    width: calc(100% - 10px);
     border-radius: 8px;
     border: solid 1px #820000;
     color: #00122A;

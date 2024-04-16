@@ -10,6 +10,11 @@ button{
 }
 
 /* Estilos do modo escuro */
+
+.bodyDark{
+  background-color: #222222;
+}
+
 .dark-mode {
   background-color: #222222;
   color: white;
@@ -26,4 +31,5 @@ button{
 .dark-mode footer {
   background-color: #333333;
 }
+
 
