@@ -47,8 +47,9 @@ const LoginComponent = () => {
           <button id='esqueciSenha'>Esqueci a senha?</button>
         </div>
         <input type="submit" value="Entrar" className='enviarBtn'/>
+        <div id='imgForm'><img src="Divisor2.png" alt=""/></div>
       </form>
-      <button className='registrarBtn' onClick={handleRegistrarClick}>Registrar</button>
+      <button className='registrarBtn' onClick={handleRegistrarClick}>Não tem cadastro ? Crie uma conta</button>
     </div>
   )
 }

@@ -23,6 +23,14 @@
     display: block;
 }
 
+.login #imgForm{
+    width: auto;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
 .login div {
     margin: 0 0 20px 0;
 }
@@ -46,10 +54,10 @@
     margin-left: 10px;
     height: 45px;
     width: 100%;
+    text-decoration: underline;
     border-radius: 20px;
     border: transparent;
-    color: #FFFFFF;
-    background-color: #226ED8;
+    color: #00122B;
     font-family: "Poppins";
     font-size: 16px;
 }
@@ -94,4 +102,13 @@
 #botoesLoginComponente{
     display: flex;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 768px){
+    .loginContainer {
+        width: 327px;
+        height: 100%;
+        margin: 0;
+        justify-content: center;
+    }
 }

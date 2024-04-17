@@ -12,3 +12,22 @@
     align-items: center;
 }
 
+@media screen and (max-width: 860px) and (min-width: 769px){
+  .ContainerTelaLogin {
+    margin-top: 200px;
+  }
+  .ContainerTelaLogin img {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .ContainerTelaLogin{
+    margin-left: -20px;
+  }
+  .ContainerTelaLogin img {
+      display: none;
+  }
+}
+

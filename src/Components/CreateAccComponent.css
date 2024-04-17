@@ -98,3 +98,12 @@
     color: #820000;
     margin-top: -15px;
 }
+
+@media screen and (max-width: 768px){
+    .createContainer {
+        height: auto;
+    }
+    .sublinhado h2{
+        margin-bottom: 0px;
+    }
+}
