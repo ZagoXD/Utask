@@ -28,6 +28,7 @@
     align-items: center;
     padding: 20px;
     position: relative;
+    margin-left: -15px;
 }
 
 .headerTask h1 {
@@ -99,16 +100,17 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-#teste1{
+#titleModalTask{
     width: 100%;
     display: flex;
     justify-content: center;
 
 }
-#teste2{
+#buttonModalTask{
     display: flex;
     width: 1%;
     justify-content: flex-end;
+    margin-left: -15px;
 }
 
 .dark-mode .janelaTask {
@@ -124,4 +126,19 @@
 .dark-mode .tituloTask h2,
 .dark-mode .descricaoTask h2 {
   color: #FAFAFA;
+}
+
+@media screen and (max-width: 768px){
+    .janelaTask{
+        width: 315px;
+        height: 418px;
+    }
+
+    #newTask{
+        width: 230px;
+    }
+    #idtitulo,
+    #iddescricao{
+        width: 230px;
+    }
 }

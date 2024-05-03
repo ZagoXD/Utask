@@ -32,8 +32,8 @@ export const ModalNewTask = ({ closeModal, addTask }) => {
         <div className="modal-overlay">
             <div className="janelaTask">
                 <div className="headerTask">
-                    <div id='teste1'><h1>Nova Task</h1></div>
-                    <div id='teste2'><button className="btnfecharTask" onClick={closeModal}><HighlightOffIcon/></button></div>
+                    <div id='titleModalTask'><h1>Nova Task</h1></div>
+                    <div id='buttonModalTask'><button className="btnfecharTask" onClick={closeModal}><HighlightOffIcon/></button></div>
                 </div>
                 <div className="tituloTask">
                     <h2 className='modalEscrito'>Título*</h2>

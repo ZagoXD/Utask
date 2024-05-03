@@ -97,5 +97,11 @@
     color: #FAFAFA;
 }
 
+@media screen and (max-width: 768px){
+    #ContainerTask {
+        width: 285px;
+    }
+  }
+
 
 

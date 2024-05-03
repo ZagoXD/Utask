@@ -5,6 +5,9 @@
     margin-right: 5px;
   
   }
+  .container p{
+    margin-left: 8px;
+  }
   #tarefas {
     display: flex;
     justify-content: space-around;
@@ -15,6 +18,7 @@
     display: flex;
     justify-content: space-between;
   }
+
   #addTask {
     display: flex;
     justify-content: center;
@@ -67,4 +71,111 @@
 
   .dark-mode .tasks {
     background-color: #333333;
+  }
+
+  #doing{
+    display: none;
+  }
+  #done{
+    display: none;
+  }
+  #toDo{
+    display: block;
+  }
+
+
+  @media screen and (max-width: 768px){
+    .containerM {
+      text-align: start;
+    
+    }
+    #tarefasM {
+      display: flex;
+      justify-content: space-around;
+      font-size: 20px;
+      font-family: "Poppins";
+      justify-content: center;
+      align-items: center;
+    }
+    #headerFazerM {
+      display: flex;
+      justify-content: flex-start
+    }
+    #addTaskM {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      height: 30px;
+      margin: auto 0px auto 200px;
+      color: #226ED8;
+    }
+    .tasksM {
+      background-color: #EEEEEE; 
+      width: 300px;
+      height: 337px;
+      left: 160px;
+      top: 301px;
+      border-radius: 10px;
+    }
+    .frameM {
+      width: auto;
+      height: 318px;
+      padding-right: 5px;
+      margin-bottom: 10px;
+      overflow: auto;
+      justify-content: center;
+      display: flex;
+      border-radius: 10px;
+      justify-content: flex-start;
+    }
+    .frameM::-webkit-scrollbar {
+      display: none;
+  }
+    .listaTarefasM {
+      display: flex;
+      flex-direction: column;
+    
+      position: relative;
+      width: 280px;
+      height: fit-content;
+      list-style-type: none;
+      padding-inline-start: 0px;
+    }
+    
+    .listaTarefasM li {
+      background: #FFFFFF;
+      border-radius: 10px;
+      padding: 6px;
+      margin-bottom: 14px;
+      height: fit-content;
+    }
+  
+    .dark-mode .tasksM {
+      background-color: #333333;
+    }
+  
+    #doing{
+      display: none;
+    }
+    #done{
+      display: none;
+    }
+    #toDo{
+      display: block;
+      margin-left: 36px;
+    }
+  
+    #containerTarefasMobile{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .PMobile{
+      margin-left: 40px;
+    }
+    .buttonsTaskMobile{
+      color: #226ED8;
+    }
+  
   }
