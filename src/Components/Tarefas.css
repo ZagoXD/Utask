@@ -76,11 +76,17 @@
   #doing{
     display: none;
   }
+
   #done{
     display: none;
   }
+
   #toDo{
     display: block;
+  }
+
+  .titleCompleted {
+    text-decoration: line-through;
   }
 
 

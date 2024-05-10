@@ -9,6 +9,10 @@ button{
   background-color: transparent;
 }
 
+button, a{
+  cursor: pointer;
+}
+
 /* Estilos do modo escuro */
 
 .bodyDark{
@@ -26,6 +30,10 @@ button{
 
 .dark-mode header {
   background-color: #333333;
+}
+
+.dark-mode header h1{
+  color: #3867D6;
 }
 
 .dark-mode footer {

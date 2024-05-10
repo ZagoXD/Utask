@@ -229,6 +229,7 @@ const Tarefas = ({ isDarkMode }) => {
                                         deleteTask={deleteTaskCompleted}
                                         moveToToDo2={moveTaskToToDo2} 
                                         isDarkMode = {isDarkMode}
+                                        isCompleted={true}
                                     />
                                 ))}
                             </ul>

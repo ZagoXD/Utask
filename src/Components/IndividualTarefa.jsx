@@ -7,7 +7,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess'; 
 
 
-const IndividualTarefa = ({ index, title, description, deleteTask, moveToInProgress, moveToCompleted, moveToToDo, moveToToDo2, isDarkMode}) => {
+const IndividualTarefa = ({ index, title, description, deleteTask, moveToInProgress, moveToCompleted, moveToToDo, moveToToDo2, isDarkMode, isCompleted}) => {
     const [excluirVisivel, setExcluirVisivel] = useState(false);
     const [descricaoVisivel, setDescricaoVisivel] = useState(false);
 
@@ -43,7 +43,7 @@ const IndividualTarefa = ({ index, title, description, deleteTask, moveToInProgr
     return (
         <div id='ContainerTask'>
             <div id='ContainerTitleTask'>
-                <h1 id='TituloTask'>{title}</h1>
+            <h1 className={isCompleted ? 'titleCompleted' : ''} id='TituloTask'>{title}</h1>
                 <button onClick={toggleExcluirVisivel} id='moreveIcon'><MoreVertIcon/></button>
             </div>
             <div id='AparecerExcluir'>{excluirVisivel && <button onClick={handleDeleteTask}><Excluir /></button>}</div>

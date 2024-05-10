@@ -53,7 +53,7 @@ function App() {
   return (
     <div id="app-container" className={isDarkMode ? 'dark-mode' : 'light-mode'}>
       <header>
-        <div><img src="/Logobranca.png" alt="" /></div>
+        <div><img src={isDarkMode ? '/Logoazul.png' : '/Logobranca.png'} alt="" /></div>
         <div><h1>uTask 3.0</h1></div>
         <div><ChangeMode toggleMode={toggleMode} isDarkMode={isDarkMode} /></div>
       </header>
