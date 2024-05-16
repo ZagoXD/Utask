@@ -3,6 +3,7 @@
     height: 100%;
     margin: 0;
     justify-content: center;
+    background-color: white;
 }
 
 .loginContainer h1 {

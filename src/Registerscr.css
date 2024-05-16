@@ -11,6 +11,11 @@
     align-items: center;
 }
 
+#registerscr{
+  background-color: white;
+  height: 100%;
+}
+
 @media screen and (max-width: 860px) and (min-width: 769px){
     .ContainerTelaRegister {
       margin-top: 200px;

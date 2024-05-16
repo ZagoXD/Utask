@@ -4,7 +4,7 @@ import './Registerscr.css'
 
 const Registerscr = () => {
   return (
-    <div>
+    <div id='registerscr'>
         <header id='headerTelaRegister'> </header>
         <div className='ContainerTelaRegister'>
           <CreateAccComponent/>
